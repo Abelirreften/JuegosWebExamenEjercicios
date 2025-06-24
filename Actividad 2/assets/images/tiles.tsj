@@ -1,0 +1,14 @@
+{ "columns":14,
+ "image":"world_tileset_ABEL.png",
+ "imageheight":256,
+ "imagewidth":256,
+ "margin":1,
+ "name":"tiles",
+ "spacing":2,
+ "tilecount":196,
+ "tiledversion":"1.11.2",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.10"
+}

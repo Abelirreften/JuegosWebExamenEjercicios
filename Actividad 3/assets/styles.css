@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    background: #36a90c;
+    font-family: 'VT323', monospace;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+  }

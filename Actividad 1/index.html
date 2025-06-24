@@ -1,0 +1,68 @@
+<!-- Por: Abel Ahimsa Martín Crego, 30/03/2025 -->
+<!-- Actividad 1, Juegos para la Web, Diseño y Desarrollo de Videojuegos, UNIR -->
+
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head de la página web -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina Expendedora por Abel Ahimsa Martín Crego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Referencia a la hoja de estilos css -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<!-- El cuerpo de la página web, contiene todos los botones y secciones visibles -->
+<body>
+    <div class="container">
+        <div class="section">
+            <h1 class="word-reveal">Maquina Expendedora</h1>
+          </div>
+        <p>Saldo actual en la máquina: <span id="saldo">0</span>€</p>
+        
+        <!-- Botones de las monedas -->
+        <div class="botones-monedas">
+            <button onclick="maquina.introducirMoneda(0.5)">0.5€</button>
+            <button onclick="maquina.introducirMoneda(1)">1€</button>
+            <button onclick="maquina.introducirMoneda(2)">2€</button>
+            <button onclick="maquina.introducirMoneda(5)">5€</button>
+            <button onclick="maquina.devolverMonedas()">Recuperar dinero introducido</button>
+        </div>
+
+        <!-- Todos los productos con su nombre, precio, stock y botón de comprar -->
+        <div class="productos">
+            <div class="producto" id="producto-0">
+                <p>Takis: 1,50€</p>
+                <p>Stock: <span class="stock">4</span></p>
+                <button onclick="maquina.comprarProducto(0)">Comprar</button>
+            </div>
+            <div class="producto" id="producto-1">
+                <p>Doritos: 2€</p>
+                <p>Stock: <span class="stock">4</span></p>
+                <button onclick="maquina.comprarProducto(1)">Comprar</button>
+            </div>
+            <div class="producto" id="producto-2">
+                <p>Oreo: 2.75€</p>
+                <p>Stock: <span class="stock">5</span></p>
+                <button onclick="maquina.comprarProducto(2)">Comprar</button>
+            </div>
+            <div class="producto" id="producto-3">
+                <p>KitKat: 1.75€</p>
+                <p>Stock: <span class="stock">5</span></p>
+                <button onclick="maquina.comprarProducto(3)">Comprar</button>
+            </div>
+            <div class="producto" id="producto-4">
+                <p>CocaCola: 2.50€</p>
+                <p>Stock: <span class="stock">7</span></p>
+                <button onclick="maquina.comprarProducto(4)">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <dialog id = "dialog">
+        <p id = "dialogContenido">MensajeAlerta</p>
+        <button onclick="cerrarMensaje()">Cerrar</button>
+      </dialog>
+    <!-- Referencia al script de Java -->
+    <script src="scripts/package.js"></script>
+</body>
+</html>

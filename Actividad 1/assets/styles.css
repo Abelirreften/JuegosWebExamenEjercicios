@@ -1,0 +1,158 @@
+/*
+Por: Abel Ahimsa Martín Crego, 30/03/2025
+Actividad 1, Juegos para la Web, Diseño y Desarrollo de Videojuegos, UNIR
+*/
+
+
+/*
+Diseño de la clase body (cuerpo de la página web)
+*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #A3D1C6;
+  margin: 50px;
+}
+
+/*
+Diseño de la clase word-reveal (texto que al que se le aplica la animación)
+*/
+.word-reveal > span {
+  font-family: Montserrat;
+  font-weight: 800;
+  display: inline-block; 
+  opacity: 0; 
+  transform: translateY(50px); 
+  animation: revealWord 0.8s ease-out forwards; 
+  margin-right: 0.3em
+}
+
+/*
+La animación "word-reveal"
+*/
+@keyframes revealWord {
+  from {opacity: 0; transform: translateY(50px)}
+  to {opacity: 1; transform: translateY(0)}
+}
+
+/*
+Diseño de la clase container (los productos)
+*/
+.container {
+  font-family: Montserrat;
+  font-weight: 400;
+  background: #FBFFE4;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #3D8D7A;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*
+Diseño de los botones de las monedas
+*/
+.botones-monedas button {
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: #B3D8A8;
+  color: black;
+  border: #3D8D7A;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 3px solid #3D8D7A;
+  cursor: pointer;
+}
+
+/*
+Color de los botones de las monedas al pasar el ratón encima
+*/
+.botones-monedas button:hover {
+  background-color: #3D8D7A;
+}
+
+/*
+Diseño de la clase productos (los cuadrados de los productos)
+*/
+.productos {
+  font-family: Montserrat;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*
+Diseño de la clase producto (cada cuadrado individual)
+*/
+.producto {
+  box-sizing: border-box; margin: 0; padding: 0;
+  font-family: Montserrat;
+  font-weight: 400;
+  background: #B3D8A8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 120px;
+  border: 3px solid #3D8D7A;
+}
+
+/*
+Diseño de los botones de los productos (comprar)
+*/
+.producto button {
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: #3D8D7A;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*
+Color de los botones de comprar al pasar el ratón encima
+*/
+.producto button:hover {
+  background-color: #2e6e5f;
+}
+
+/*
+Diseño del mensaje de alerta de acción
+*/
+#dialog button {
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: #3D8D7A;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*
+Diseño del recuadro del mensaje de alerta de acción
+*/
+#dialog {
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: #FBFFE4;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
